@@ -1,0 +1,17 @@
+<h1> Te voilà dans le club ! </h1>
+
+<p> Voici la liste des membres du club </p>
+	<div class="card-columns">
+	<% User.all.each_with_index do |u, id|%>
+
+		<div class="card p-3">
+    <blockquote class="blockquote mb-0">
+      <p><%=u.first_name%></p>
+      <p><%=u.last_name%></p>
+      <p><%=u.email%></p>
+    </blockquote>
+  </div>
+
+		<% end %>
+
+</body>
