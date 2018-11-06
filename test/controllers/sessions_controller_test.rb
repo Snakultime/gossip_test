@@ -1,6 +1,11 @@
 require 'test_helper'
 
 class SessionsControllerTest < ActionDispatch::IntegrationTest
+
+  setup do
+    @user = User.create(last_name: 'foo1', first_name: 'foo1', email: 'foo@foo.foo', password: 'foo1', password_confirmation: 'foo1')
+  end
+
   test "should get new" do
     get login_path
     assert_response :success
@@ -18,18 +23,4 @@ class SessionsControllerTest < ActionDispatch::IntegrationTest
       end
       assert_template 'users/new'
     end
-
-    test "valid signup information" do
-      get signup_path
-      assert_difference 'User.count' do
-        post users_path, params: { user: {
-          first_name:  "firstUser",
-          last_name:  "lastUser",
-          email: "kkchose@valid.youknow",
-          password:              "password",
-          password_confirmation: "password" } }
-      end
-      assert_template 'users/show'
-    end
-
 end

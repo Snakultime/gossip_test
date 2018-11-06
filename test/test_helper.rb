@@ -8,3 +8,32 @@ class ActiveSupport::TestCase
 
   # Add more helper methods to be used by all tests here...
 end
+
+module SignInHelper
+  def is_logged_in?(user)
+    params = {}
+    params[:session] = {email: user.email, password: user.password }
+    post login_url(params)
+  end
+
+  def logged?
+    puts "curernt_user : #{current_user}"
+    !current_user.nil?
+  end
+end
+
+module ParamUserHelper
+  def param_user(user)
+    {user: {last_name: user.first_name, last_name: user.last_name, email: user.email, password: user.password}}
+  end
+
+  def param_user_no_pwd(user)
+    {user: {first_name: user.first_name, last_name: user.first_name, email: user.email}}
+  end
+end
+
+class ActionDispatch::IntegrationTest
+  include SignInHelper
+  include ParamUserHelper
+end
+

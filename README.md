@@ -6,6 +6,7 @@ tout fonctionne bien.
 ## Fait par Cédric // @iCédric
 ## Fait par Maixent // @Maixent.Dasilveira
 ## Fait par Marcel // @MarcelALng
+## Fait par "Qu'est-ce qui est jaune et qui attend ?" // @JonathanMete
 ## Fait par Axel // @Axel
 
 ## Versions Ruby et Rails
