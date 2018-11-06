@@ -3,13 +3,8 @@
 Elle consiste à regarder les autres logins et à faire des tests pour savoir si
 tout fonctionne bien.
 
-## Fait par Cédric // @iCédric
-## Fait par Maixent // @Maixent.Dasilveira
-## Fait par Marcel // @MarcelALng
-## Fait par "Qu'est-ce qui est jaune et qui attend ?" // @JonathanMete
-## Fait par Axel // @Axel
 
-Noms | Pseudo Slack
+Fait par | Pseudo Slack
 ------------ | -------------
 Cédric| @iCédric
 Maixent| @Maixent.Dasilveira
