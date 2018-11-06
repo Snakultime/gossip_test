@@ -9,6 +9,14 @@ tout fonctionne bien.
 ## Fait par "Qu'est-ce qui est jaune et qui attend ?" // @JonathanMete
 ## Fait par Axel // @Axel
 
+Noms | Pseudo Slack
+------------ | -------------
+Cédric| @iCédric
+Maixent| @Maixent.Dasilveira
+Marcel| @MarcelALng
+"Qu'est-ce qui est jaune et qui attend ?"| @JonathanMete
+Axel| @Axel
+
 ## Versions Ruby et Rails
 Ruby version 2.5.1
 Rails version 5.2.1
